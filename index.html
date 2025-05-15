@@ -1,27 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Índice de Exercícios</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="shortcut icon" href="../assets/star.png" type="image/png" />
+    <title>Meu Portfólio Profissional</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Índice de Exercícios</h1>
-
-      <!-- Seção HTML/CSS -->
-      <div class="theme-section">
-        <h2>HTML/CSS</h2>
-        <ul class="lesson-list">
-          <li>
-            <a href="busca_cep/index.html"
-              >[HTML] Aula 1 - Introdução ao HTML</a
-            >
-          </li>
-        </ul>
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <i class="fas fa-code"></i>
+          <span>Portfólio</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul id="nav-list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
+
+    <!-- SOBRE MIM -->
+    <section class="about" id="sobre">
+      <div class="container about-container">
+        <img
+          src="https://i.pinimg.com/474x/a7/77/26/a777268f7701fbf12bdc2ed4175758d5.jpg"
+          alt="Sua foto"
+          class="about-img"
+        />
+        <div class="about-text">
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou um desenvolvedor apaixonado por tecnologia....COMPLETE A SUA
+            DESCRIÇÃO AQUI
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projects">
+      <div class="container">
+        <h2>Meus Projetos Desenvolvidos</h2>
+        <p>
+          Confira abaixo uma seleção dos meus trabalhos mais recentes e
+          relevantes, demonstrando minhas habilidades e experiência.
+        </p>
+
+        <div class="projects-container" id="galeriaProjetos">
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="container footer-content">
+        <p>© 2025 Meu Portfólio Profissional. Todos os direitos reservados.</p>
+        <p>Entre em contato para oportunidades de trabalho ou colaborações.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
